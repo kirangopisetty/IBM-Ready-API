@@ -1,0 +1,1716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="391ab8c3-192f-4b6b-bac3-a4e8daa208ae" created="3.47.0" activeEnvironment="Default environment" encryptionMode="Not encrypted" name="STUDENTDETAILS" projectVersion="" updated="3.47.0 2023-06-30T11:24:47Z" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="46389840-9015-472c-a759-d3763f2a173c" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://thetestingworldapi.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings id="07eb1a98-4935-4cd2-9da8-14cdde822c7e"/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+    </con:endpoints>
+    <con:resource name="StudentsDetails" path="/api/studentsDetails" id="3a966b6a-a0a4-47fa-b390-14bc12df2322">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="StudentsDetails" id="41ea9911-6e67-4da6-aa1d-a3dd770407cf" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:request name="GETALLSTUDENTSDETAILS" id="78b75697-d742-4bc9-9ac2-f8eb97922957" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+          <con:request/>
+          <con:originalUri>https://thetestingworldapi.com/api/studentsDetails</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+      <con:method name="StudentsDetails 2" id="cb631b56-9001-4e6d-9c48-34d541ae1737" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>201</con:status>
+          <con:params/>
+          <con:element xmlns:stud="https://thetestingworldapi.com/api/studentsDetails">stud:Response</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="POSTCREATESTUDENT" id="3033c9d5-6be1-42f6-b236-7a45bcf89176" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="Id" path="/api/studentsDetails/{id}" id="63b1d714-6221-4807-b6a9-be4dd4d561be">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Id" id="49fe03e5-0058-4182-b9d2-a800a1539363" method="GET">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>id</con:name>
+            <con:value>id</con:value>
+            <con:style>TEMPLATE</con:style>
+            <con:default>id</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:ns="https://thetestingworldapi.com/api/studentsDetails/7784886">ns:Response</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element xmlns:ns="https://thetestingworldapi.com/api/studentsDetails/7784886">ns:Fault</con:element>
+        </con:representation>
+        <con:request name="GETSINGLESTUDENTDETAILS" id="35e4f3e8-d45b-4123-bd40-60eafc2f139b" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="id" value="id"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="Id 2" id="8af44fcb-6e67-4545-90fd-f6911f6a6d18" method="PUT">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>id</con:name>
+            <con:value>id</con:value>
+            <con:style>TEMPLATE</con:style>
+            <con:default>id</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:ns="https://thetestingworldapi.com/api/studentsDetails/7784919">ns:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>404 400</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="PUTUPDATESTUDENT" id="938a0eac-7b31-44bf-920d-222c05c84551" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="id" value="id"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="Id 3" id="54c6f8ca-f2c3-499f-b493-b4b48d3cefd5" method="DELETE">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>id</con:name>
+            <con:value>id</con:value>
+            <con:style>TEMPLATE</con:style>
+            <con:default>id</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:ns="https://thetestingworldapi.com/api/studentsDetails/7784919">ns:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="DELETESTUDENTDETAILS" id="066e9811-0652-4280-8fc1-c17ddf5338c7" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="id" value="id"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="a75e5993-0fa1-45f0-8368-6ef951f40370" name="TS1-GetStudents">
+    <con:settings id="7f5423b9-f309-49c9-a27d-a201dcd14e58"/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="bb278d3b-2278-4ec8-a175-e45f35b0f876" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="https://thetestingworldapi.com Test Case 1" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="restrequest" name="TC1-GETALLSTUDENTSDETAILS" id="b6c168c7-396c-4752-8c7a-300106635ab3">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails" methodName="StudentsDetails" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC1-GETALLSTUDENTSDETAILS" id="78b75697-d742-4bc9-9ac2-f8eb97922957" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="4db78a64-7ba0-45a1-80ee-9e11b7963dce" name="Verify if response code=200 OK">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="e64213b9-243b-4111-b28c-efa85a589e6e" name="Verify if response time &lt; 4 seconds">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Match" id="e6f0764c-ef0e-44c4-a84e-12143ed73c97" name="JSONPath Match">
+              <con:configuration>
+                <path>[3].last_name</path>
+                <content>"Gaikwad"</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Count" id="36cf4e3b-ac28-4581-ab5c-475a4ee2863a" name="JSONPath Count">
+              <con:configuration>
+                <path>[*].id</path>
+                <content>100</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="ee917166-1ed1-4191-8241-3580afe2612e" name="TS2-GetSingleStudent">
+    <con:settings id="aa1cd9dd-4689-459d-be70-62b6ea4ae545"/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="aefdf3f8-92f8-4569-87e2-b9e5a6d5e8b3" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="https://thetestingworldapi.com Test Case 1" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="restrequest" name="TC2-GETSINGLESTUDENTDETAILS" id="e321c40b-fc29-4295-bad3-b7e9a8914d30">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails/{id}" methodName="Id" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC2-GETSINGLESTUDENTDETAILS" id="35e4f3e8-d45b-4123-bd40-60eafc2f139b" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="User-Agent" value="Mozilla/5.0 (X11; Linux i686; rv:109.0) Gecko/20100101 Firefox/117.0" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/7784886</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="1de7653e-3152-491e-a083-f29d8bfa5af3" name="Verify if response code=200 OK">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="58cc2c63-090d-434f-b58f-539a1bc431b6" name="Verify if response time &lt; 4 seconds">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="7784919"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="104e33ba-04f8-407d-92d6-a3771470b95e" name="TS4-UpdateStudent">
+    <con:settings id="e87ffa1a-bd16-427a-a1e3-22d8b918eaf7"/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="390a198d-3e83-4b95-8b27-f7561e0d86ed" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="https://thetestingworldapi.com Test Case 1" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="restrequest" name="TC4-UPDATESTUDENTDETAILS" id="604c63e5-703f-4344-9c65-f977dfe21569">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails/{id}" methodName="Id 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC4-UPDATESTUDENTDETAILS" id="938a0eac-7b31-44bf-920d-222c05c84551" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="User-Agent" value="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Mobile/15E148 Safari/604.1" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request>{
+	"id": "7784919",
+	"first_name": "KIRAN",
+	"middle_name": "Trainer",
+	"last_name": "G",
+	"date_of_birth": "01-01-1999"
+}</con:request>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/7784919</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="0233f76a-7a39-4b2c-a889-e1e9c4d1c3e9" name="Verify if response code = 200">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="356dfa87-8f3b-40e2-9656-14d9e744948f" name="Verify if response time &lt; 4 seconds">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="7784919"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="0597a6ba-7a9e-4024-94ec-0ac3fd592d24" name="TS3-CreateStudent">
+    <con:settings id="45773682-a84e-4c3f-8dac-e4c037d8a987"/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="c44c8a86-49dc-443c-aefd-40731b7db951" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="https://thetestingworldapi.com Test Case 1" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="restrequest" name="TC3-CREATESTUDENT" id="88ac8b3a-0019-49dd-94df-5d3cbe4e488f">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails" methodName="StudentsDetails 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC3-CREATESTUDENT" id="3033c9d5-6be1-42f6-b236-7a45bcf89176" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="User-Agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 13_5_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request>{
+   	"first_name": "${#TestCase#tcFName}",
+  	"middle_name": "${#TestCase#tcMName}",
+  	"last_name": "${#TestCase#tcLName}",
+  	"date_of_birth": "01-01-1999"
+}</con:request>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="a1a3e8c9-4904-42e7-b4fe-798733c01bbf" name="Verify if the response code=201">
+              <con:settings/>
+              <con:configuration>
+                <codes>201</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Invalid HTTP Status Codes" id="094b877d-b10e-4f9a-b00f-0d08a87256ec" name="Verify if the response code is not an error">
+              <con:configuration>
+                <codes>400,401,403,404,500,503</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="e38e4cd1-cab2-4b94-97fa-8b38d4a7a27c" name="Verify if response time &lt; 2 seconds">
+              <con:configuration>
+                <SLA>2000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="c90e3a4f-b9d8-4102-916a-575d6c859358" name="Verify if response body contains ID">
+              <con:configuration>
+                <token>id</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="1641a59b-bf9a-434f-8198-34eefb6e555d" name="Verify if response body contains first_name">
+              <con:configuration>
+                <token>first_name</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="565839b6-c8b5-42c0-a6cf-cbb1c9aa17df" name="Verify if response body contains middle_name">
+              <con:configuration>
+                <token>middle_name</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="1e7d1140-2745-466a-aa34-1c3c54ee3de2" name="Verify if response body contains last_name">
+              <con:configuration>
+                <token>last_name</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="639db974-5e10-4875-92df-0fe8715adf5b" name="Verify if response body contains date_of_birth">
+              <con:configuration>
+                <token>date_of_birth</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple NotContains" id="600a8136-a184-40a4-a8e3-fba9836c2757" name="Verify if response body doesn't contain error">
+              <con:configuration>
+                <token>error</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple NotContains" id="a9d79ed8-39eb-4b39-be75-14640f934cc9" name="Verify if response body doesn't contain warning">
+              <con:configuration>
+                <token>warn*</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>true</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple NotContains" id="9f218e15-49cc-4839-b05e-bc84248c3d8f" name="Verify if response body doesn't contain fatal">
+              <con:configuration>
+                <token>fatal</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple NotContains" id="051f2886-9256-4cbe-95c2-3bbb36183aeb" name="Verify if response body doesn't contain exception">
+              <con:configuration>
+                <token>exception</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="DataAndMetadataAssertion" id="3cda1c1f-25b9-4a04-989c-5d880704865a" name="Verify if first_name=Sanchita">
+              <con:configuration xsi:type="con:DataAndMetadataAssertion">
+                <con:mode>Received Data</con:mode>
+                <con:elements>
+                  <con:path>$['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>7785651</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['first_name']</con:path>
+                  <con:element>first_name</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Sanchita</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['middle_name']</con:path>
+                  <con:element>middle_name</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Miss.</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['last_name']</con:path>
+                  <con:element>last_name</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Student</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['date_of_birth']</con:path>
+                  <con:element>date_of_birth</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>01-01-1999</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:originalMessage>{"id":7785651,"first_name":"Sanchita","middle_name":"Miss.","last_name":"Student","date_of_birth":"01-01-1999"}</con:originalMessage>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="DataAndMetadataAssertion" id="16a03448-ab78-442e-8fbf-352c47bb5086" name="Verify the data types of response body">
+              <con:configuration xsi:type="con:DataAndMetadataAssertion">
+                <con:mode>Received Data</con:mode>
+                <con:elements>
+                  <con:path>$['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>16</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>7785656</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['first_name']</con:path>
+                  <con:element>first_name</con:element>
+                  <con:operatorId>16</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Sanchita</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['middle_name']</con:path>
+                  <con:element>middle_name</con:element>
+                  <con:operatorId>16</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Miss.</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['last_name']</con:path>
+                  <con:element>last_name</con:element>
+                  <con:operatorId>16</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Student</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['date_of_birth']</con:path>
+                  <con:element>date_of_birth</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>01-01-1999</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:originalMessage>{"id":7785656,"first_name":"Sanchita","middle_name":"Miss.","last_name":"Student","date_of_birth":"01-01-1999"}</con:originalMessage>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="DataAndMetadataAssertion" id="777b93c8-cfd6-4a8a-9d1c-62ad4bb1b279" name="Verify the response body fields existence">
+              <con:configuration xsi:type="con:DataAndMetadataAssertion">
+                <con:mode>Received Data</con:mode>
+                <con:elements>
+                  <con:path>$['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>9</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>7785656</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['first_name']</con:path>
+                  <con:element>first_name</con:element>
+                  <con:operatorId>9</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Sanchita</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['middle_name']</con:path>
+                  <con:element>middle_name</con:element>
+                  <con:operatorId>9</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Miss.</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['last_name']</con:path>
+                  <con:element>last_name</con:element>
+                  <con:operatorId>9</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Student</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['date_of_birth']</con:path>
+                  <con:element>date_of_birth</con:element>
+                  <con:operatorId>9</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>01-01-1999</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:originalMessage>{"id":7785656,"first_name":"Sanchita","middle_name":"Miss.","last_name":"Student","date_of_birth":"01-01-1999"}</con:originalMessage>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="DataAndMetadataAssertion" id="90a67831-9d6c-48f4-9356-4626f73db1c2" name="Verify if the response body fields are not empty">
+              <con:configuration xsi:type="con:DataAndMetadataAssertion">
+                <con:mode>Received Data</con:mode>
+                <con:elements>
+                  <con:path>$['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>7785656</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['first_name']</con:path>
+                  <con:element>first_name</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Sanchita</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['middle_name']</con:path>
+                  <con:element>middle_name</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Miss.</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['last_name']</con:path>
+                  <con:element>last_name</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Student</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['date_of_birth']</con:path>
+                  <con:element>date_of_birth</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>01-01-1999</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:originalMessage>{"id":7785656,"first_name":"Sanchita","middle_name":"Miss.","last_name":"Student","date_of_birth":"01-01-1999"}</con:originalMessage>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties>
+        <con:property>
+          <con:name>tcFName</con:name>
+          <con:value>Shobhana</con:value>
+        </con:property>
+        <con:property>
+          <con:name>tcMName</con:name>
+          <con:value>Miss</con:value>
+        </con:property>
+        <con:property>
+          <con:name>tcLName</con:name>
+          <con:value>Student</con:value>
+        </con:property>
+      </con:properties>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="dbb84747-96ab-442b-aa43-1c5a747ad3d3" name="TS5-DeleteStudent">
+    <con:settings id="3d4247df-c609-427c-9ce1-530b90f26d9d"/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="243420fa-12a0-4b5c-8b3a-ed80261574e1" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="https://thetestingworldapi.com Test Case 1" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="properties" name="Properties" id="b56cfacf-5f1b-4d7a-b069-3ba2c0f88635">
+        <con:settings/>
+        <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:properties>
+            <con:property>
+              <con:name>tStepID</con:name>
+              <con:value>7785841</con:value>
+            </con:property>
+            <con:property>
+              <con:name>tsLastName</con:name>
+              <con:value>Avinash Mishra</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script - Set Property" id="a7de6fac-d10c-46f2-b27c-86dcd2d5d415">
+        <con:settings/>
+        <con:config>
+          <script>// set a global property
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "gMiddleName", "Singh" );
+
+// set a project property
+testRunner.testCase.testSuite.project.setPropertyValue( "prjName", "StudentDetails" ) ;
+
+// set a testSuite property
+testRunner.testCase.testSuite.setPropertyValue( "testSuiteName", "TS5-DeleteStudent" );
+
+// set a testCase property
+testRunner.testCase.setPropertyValue( "tcName", "DeleteStudentTestCase" );
+
+//set a testStep property
+testRunner.testCase.getTestStepByName("Properties").setPropertyValue( "tsLastName", "Mishra" );</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script - Get Property" id="3c5d7a32-00c4-43bd-9b06-ca9110cd7375">
+        <con:settings/>
+        <con:config>
+          <script>// get a Global property
+
+def globalAccessToken = com.eviware.soapui.SoapUI.globalProperties.getPropertyValue( "gAccessToken" );
+log.info ("           The global Access Token variable value is  "+globalAccessToken);
+
+// log.info(" >>>>> The gAccessToken value is " +com.eviware.soapui.SoapUI.globalProperties.getPropertyValue( "gAccessToken" ));
+
+// get a Project property
+def projectProperty = testRunner.testCase.testSuite.project.getPropertyValue( "prjName" );
+log.info ("    The project property prjName= "+projectProperty);
+
+// get a TestSuite property
+def testSuiteProperty = testRunner.testCase.testSuite.getPropertyValue( "testSuiteName" );
+log.info ("    The test suite property testSuiteName= "+testSuiteProperty);
+
+// get a TestCase property
+def testCaseProperty = testRunner.testCase.getPropertyValue("tcName");
+log.info ("    The test case property tcName= "+testCaseProperty);
+
+// get a TestStep property
+def testStepProperty = testRunner.testCase.getTestStepByName("Properties").getPropertyValue("tsLastName");
+log.info ("    The test step property tsLastName= "+testStepProperty);</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script - Remove Property" id="99445e3d-ca14-4085-abb7-f900fc8fa57d">
+        <con:settings/>
+        <con:config>
+          <script>// remove a global property
+com.eviware.soapui.SoapUI.globalProperties.removeProperty( "gMiddleName");
+
+// remove a project property
+testRunner.testCase.testSuite.project.removeProperty("prjName") ;
+
+// remove a testSuite property
+testRunner.testCase.testSuite.removeProperty( "testSuiteName" );
+
+// remove a testCase property
+testRunner.testCase.removeProperty( "tcName");
+
+//remove a testStep property
+testRunner.testCase.getTestStepByName("Properties").removeProperty( "tsLastName");</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script - Add Property" id="6d8386f5-5431-435a-be2e-519e6e97c3be">
+        <con:settings/>
+        <con:config>
+          <script>// add a global property
+com.eviware.soapui.SoapUI.globalProperties.addProperty("gMiddleName");
+
+// add a project property
+testRunner.testCase.testSuite.project.addProperty("prjName") ;
+
+// add a testSuite property
+testRunner.testCase.testSuite.addProperty("testSuiteName");
+
+// add a testCase property
+testRunner.testCase.addProperty("tcName" );
+
+//add a testStep property
+testRunner.testCase.getTestStepByName("Properties").addProperty( "tsLastName");</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="groovy" name="Groovy Script - Overwrite Property values" id="afa629fd-3013-4809-a5ed-54faf84c203b">
+        <con:settings/>
+        <con:config>
+          <script>// set a global property
+com.eviware.soapui.SoapUI.globalProperties.setPropertyValue( "gMiddleName", "Neha Singh" );
+
+// set a project property
+testRunner.testCase.testSuite.project.setPropertyValue( "prjName", "UserDetails" ) ;
+
+// set a testSuite property
+testRunner.testCase.testSuite.setPropertyValue( "testSuiteName", "TS5-DeleteUser" );
+
+// set a testCase property
+testRunner.testCase.setPropertyValue( "tcName", "DeleteUserTestCase" );
+
+//set a testStep property
+testRunner.testCase.getTestStepByName("Properties").setPropertyValue( "tsLastName", "Avinash Mishra" );</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC5-DELETESTUDENT" id="002f7c2b-dac5-49f8-bded-a645afb8a8e9">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails/{id}" methodName="Id 3" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC5-DELETESTUDENT" id="066e9811-0652-4280-8fc1-c17ddf5338c7" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/7784919</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="61ba4e5a-0a3e-4765-b1e0-5501edd38c6d" name="Verify if response code=200">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="c230233e-5005-48f8-afb4-3ef05797d219" name="Verify if response time &lt; 4 seconds">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="${Properties#tStepID}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties>
+        <con:property>
+          <con:name>tcName</con:name>
+          <con:value>DeleteUserTestCase</con:value>
+        </con:property>
+      </con:properties>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties>
+      <con:property>
+        <con:name>testSuiteName</con:name>
+        <con:value>TS5-DeleteUser</con:value>
+      </con:property>
+    </con:properties>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="a87da861-50dc-440c-960f-03c5a220e351" name="Test Suite 6">
+    <con:settings id="d53d566a-8fc9-4f6b-bf36-5a72d050ac96"/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="f7f9a0e5-1be2-4d27-a62e-ea96505ed635" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test Case-Reusability" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="calltestcase" name="Run Test Case" id="f9ffae91-9f7b-48db-9b63-71908493c123">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:targetTestCase>bb278d3b-2278-4ec8-a175-e45f35b0f876</con:targetTestCase>
+          <con:properties/>
+          <con:returnProperties/>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="calltestcase" name="Run Test Case 2" id="e4c2020a-1524-4c0d-88d7-b1c4621ffd7a">
+        <con:settings/>
+        <con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:targetTestCase>c44c8a86-49dc-443c-aefd-40731b7db951</con:targetTestCase>
+          <con:properties>
+            <con:property>
+              <con:name>tcFName</con:name>
+            </con:property>
+            <con:property>
+              <con:name>tcMName</con:name>
+            </con:property>
+            <con:property>
+              <con:name>tcLName</con:name>
+            </con:property>
+          </con:properties>
+          <con:returnProperties/>
+          <con:runMode>PARALLELL</con:runMode>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="bd91d83b-ca97-4a3a-bb63-f9a0c32cacf1" name="E2E-TEST-SUITE">
+    <con:settings id="ff8142d9-e90f-4eeb-b5f3-7f7c6aacf9ff">
+      <con:setting id="IncludeOverview">true</con:setting>
+      <con:setting id="IncludeResults">true</con:setting>
+      <con:setting id="FlowLayout">false</con:setting>
+      <con:setting id="ErrorDetails">true</con:setting>
+      <con:setting id="IncludeCoverage">true</con:setting>
+    </con:settings>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="23bb4ca4-8571-49e7-a690-5b90eb8deb5d" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="E2E-TEST-CASE" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="restrequest" name="CREATE STUDENT" id="4a94fd85-746d-4d44-be7f-357b19e551f6">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails" methodName="StudentsDetails 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="CREATE STUDENT" id="3033c9d5-6be1-42f6-b236-7a45bcf89176" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="User-Agent" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 13_5_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Safari/605.1.15" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request>{
+   	"first_name": "Kiran",
+  	"middle_name": "Mr.",
+  	"last_name": "IBM",
+  	"date_of_birth": "01-01-1999"
+}</con:request>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="a1a3e8c9-4904-42e7-b4fe-798733c01bbf" name="Verify if the response code=201">
+              <con:settings/>
+              <con:configuration>
+                <codes>201</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Invalid HTTP Status Codes" id="094b877d-b10e-4f9a-b00f-0d08a87256ec" name="Verify if the response code is not an error">
+              <con:configuration>
+                <codes>400,401,403,404,500,503</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="e38e4cd1-cab2-4b94-97fa-8b38d4a7a27c" name="Verify if response time &lt; 2 seconds">
+              <con:configuration>
+                <SLA>2000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="c90e3a4f-b9d8-4102-916a-575d6c859358" name="Verify if response body contains ID">
+              <con:configuration>
+                <token>id</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="1641a59b-bf9a-434f-8198-34eefb6e555d" name="Verify if response body contains first_name">
+              <con:configuration>
+                <token>first_name</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="565839b6-c8b5-42c0-a6cf-cbb1c9aa17df" name="Verify if response body contains middle_name">
+              <con:configuration>
+                <token>middle_name</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="1e7d1140-2745-466a-aa34-1c3c54ee3de2" name="Verify if response body contains last_name">
+              <con:configuration>
+                <token>last_name</token>
+                <ignoreCase>false</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple Contains" id="639db974-5e10-4875-92df-0fe8715adf5b" name="Verify if response body contains date_of_birth">
+              <con:configuration>
+                <token>date_of_birth</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple NotContains" id="600a8136-a184-40a4-a8e3-fba9836c2757" name="Verify if response body doesn't contain error">
+              <con:configuration>
+                <token>error</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple NotContains" id="a9d79ed8-39eb-4b39-be75-14640f934cc9" name="Verify if response body doesn't contain warning">
+              <con:configuration>
+                <token>warn*</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>true</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple NotContains" id="9f218e15-49cc-4839-b05e-bc84248c3d8f" name="Verify if response body doesn't contain fatal">
+              <con:configuration>
+                <token>fatal</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Simple NotContains" id="051f2886-9256-4cbe-95c2-3bbb36183aeb" name="Verify if response body doesn't contain exception">
+              <con:configuration>
+                <token>exception</token>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="DataAndMetadataAssertion" id="16a03448-ab78-442e-8fbf-352c47bb5086" name="Verify the data types of response body">
+              <con:configuration xsi:type="con:DataAndMetadataAssertion">
+                <con:mode>Received Data</con:mode>
+                <con:elements>
+                  <con:path>$['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>16</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>7785656</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['first_name']</con:path>
+                  <con:element>first_name</con:element>
+                  <con:operatorId>16</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Sanchita</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['middle_name']</con:path>
+                  <con:element>middle_name</con:element>
+                  <con:operatorId>16</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Miss.</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['last_name']</con:path>
+                  <con:element>last_name</con:element>
+                  <con:operatorId>16</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Student</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['date_of_birth']</con:path>
+                  <con:element>date_of_birth</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>01-01-1999</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:originalMessage>{"id":7785656,"first_name":"Sanchita","middle_name":"Miss.","last_name":"Student","date_of_birth":"01-01-1999"}</con:originalMessage>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="DataAndMetadataAssertion" id="777b93c8-cfd6-4a8a-9d1c-62ad4bb1b279" name="Verify the response body fields existence">
+              <con:configuration xsi:type="con:DataAndMetadataAssertion">
+                <con:mode>Received Data</con:mode>
+                <con:elements>
+                  <con:path>$['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>9</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>7785656</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['first_name']</con:path>
+                  <con:element>first_name</con:element>
+                  <con:operatorId>9</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Sanchita</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['middle_name']</con:path>
+                  <con:element>middle_name</con:element>
+                  <con:operatorId>9</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Miss.</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['last_name']</con:path>
+                  <con:element>last_name</con:element>
+                  <con:operatorId>9</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Student</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['date_of_birth']</con:path>
+                  <con:element>date_of_birth</con:element>
+                  <con:operatorId>9</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>01-01-1999</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:originalMessage>{"id":7785656,"first_name":"Sanchita","middle_name":"Miss.","last_name":"Student","date_of_birth":"01-01-1999"}</con:originalMessage>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="DataAndMetadataAssertion" id="90a67831-9d6c-48f4-9356-4626f73db1c2" name="Verify if the response body fields are not empty">
+              <con:configuration xsi:type="con:DataAndMetadataAssertion">
+                <con:mode>Received Data</con:mode>
+                <con:elements>
+                  <con:path>$['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>7785656</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['first_name']</con:path>
+                  <con:element>first_name</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Sanchita</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['middle_name']</con:path>
+                  <con:element>middle_name</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Miss.</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['last_name']</con:path>
+                  <con:element>last_name</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Student</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['date_of_birth']</con:path>
+                  <con:element>date_of_birth</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>01-01-1999</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:originalMessage>{"id":7785656,"first_name":"Sanchita","middle_name":"Miss.","last_name":"Student","date_of_birth":"01-01-1999"}</con:originalMessage>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="transfer" name="Property Transfer1" id="1aff9d63-76d4-4a11-8c5d-7b2d7640a9a7">
+        <con:settings/>
+        <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+            <con:name>extractedID</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>CREATE STUDENT</con:sourceStep>
+            <con:sourcePath>$['id']</con:sourcePath>
+            <con:targetType>id</con:targetType>
+            <con:targetStep>VERIFY IF STUDENT IS CREATED</con:targetStep>
+            <con:targetPath/>
+            <con:type>JSONPATH</con:type>
+            <con:targetTransferType>JSONPATH</con:targetTransferType>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="VERIFY IF STUDENT IS CREATED" id="58fc78fe-d8c7-455a-a179-d0931295531f">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails/{id}" methodName="Id" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="VERIFY IF STUDENT IS CREATED" id="35e4f3e8-d45b-4123-bd40-60eafc2f139b" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="User-Agent" value="Mozilla/5.0 (X11; Linux i686; rv:109.0) Gecko/20100101 Firefox/117.0" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/7784886</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="1de7653e-3152-491e-a083-f29d8bfa5af3" name="Verify if response code=200 OK">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="58cc2c63-090d-434f-b58f-539a1bc431b6" name="Verify if response time &lt; 4 seconds">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="DataAndMetadataAssertion" id="3852ff23-3271-4c16-a7ad-8253ef6a2e15" name="Verify if status=true and student is created">
+              <con:configuration xsi:type="con:DataAndMetadataAssertion">
+                <con:mode>Received Data</con:mode>
+                <con:elements>
+                  <con:path>$['status']</con:path>
+                  <con:element>status</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>true</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['data']['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>7786196</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['data']['first_name']</con:path>
+                  <con:element>first_name</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Kiran</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['data']['middle_name']</con:path>
+                  <con:element>middle_name</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Mr.</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['data']['last_name']</con:path>
+                  <con:element>last_name</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>IBM</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['data']['date_of_birth']</con:path>
+                  <con:element>date_of_birth</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>01-01-1999</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:originalMessage>{"status":"true","data":{"id":7786196,"first_name":"Kiran","middle_name":"Mr.","last_name":"IBM","date_of_birth":"01-01-1999"}}</con:originalMessage>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="7786227"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="transfer" name="Property Transfer2" id="9b0d9afa-002b-4495-8e3d-dbd1c47f16ca">
+        <con:settings/>
+        <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+            <con:name>extractedID</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>CREATE STUDENT</con:sourceStep>
+            <con:sourcePath>$['id']</con:sourcePath>
+            <con:targetType>id</con:targetType>
+            <con:targetStep>UPDATE STUDENT</con:targetStep>
+            <con:targetPath>$</con:targetPath>
+            <con:type>JSONPATH</con:type>
+            <con:targetTransferType>JSONPATH</con:targetTransferType>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="transfer" name="Property Transfer3" id="45da01c3-9cda-4e1a-9066-649f2f87bde0">
+        <con:settings/>
+        <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+            <con:name>extractedID</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>CREATE STUDENT</con:sourceStep>
+            <con:sourcePath>$['id']</con:sourcePath>
+            <con:targetType>Request</con:targetType>
+            <con:targetStep>UPDATE STUDENT</con:targetStep>
+            <con:targetPath>$['id']</con:targetPath>
+            <con:type>JSONPATH</con:type>
+            <con:targetTransferType>JSONPATH</con:targetTransferType>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="UPDATE STUDENT" id="0277f64a-21b1-4849-8a67-cbb40c1a0b62">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails/{id}" methodName="Id 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="UPDATE STUDENT" id="938a0eac-7b31-44bf-920d-222c05c84551" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="User-Agent" value="Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Mobile/15E148 Safari/604.1" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request>{"id":7786227,"first_name":"KIRAN","middle_name":"Mr.","last_name":"G","date_of_birth":"01-01-1999"}</con:request>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/7784919</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="0233f76a-7a39-4b2c-a889-e1e9c4d1c3e9" name="Verify if response code = 200">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="356dfa87-8f3b-40e2-9656-14d9e744948f" name="Verify if response time &lt; 4 seconds">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="DataAndMetadataAssertion" id="cd2b6137-e9c7-4303-a986-e0b7bc3f1b23" name="Verify if student is updated">
+              <con:configuration xsi:type="con:DataAndMetadataAssertion">
+                <con:mode>Received Data</con:mode>
+                <con:elements>
+                  <con:path>$['status']</con:path>
+                  <con:element>status</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>true</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['msg']</con:path>
+                  <con:element>msg</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>update  data success</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:originalMessage>{"status":"true","msg":"update  data success"}</con:originalMessage>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="7786227"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="transfer" name="Property Transfer4" id="4ab38aab-1a75-4b93-8ce7-4a821168d85a">
+        <con:settings/>
+        <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true" ignoreEmpty="false" transferToAll="false" entitize="false" transferChildNodes="false">
+            <con:name>id</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>CREATE STUDENT</con:sourceStep>
+            <con:sourcePath>$['id']</con:sourcePath>
+            <con:targetType>extractedID</con:targetType>
+            <con:targetStep>#Global#</con:targetStep>
+            <con:targetPath/>
+            <con:type>JSONPATH</con:type>
+            <con:targetTransferType>JSONPATH</con:targetTransferType>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="VERIFY IF STUDENT IS UPDATED" id="4e6fb3b5-f3b2-4720-b07e-1ca02d6cb460">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails/{id}" methodName="Id" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="VERIFY IF STUDENT IS UPDATED" id="35e4f3e8-d45b-4123-bd40-60eafc2f139b" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="User-Agent" value="Mozilla/5.0 (X11; Linux i686; rv:109.0) Gecko/20100101 Firefox/117.0" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/7784886</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="1de7653e-3152-491e-a083-f29d8bfa5af3" name="Verify if response code=200 OK">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="58cc2c63-090d-434f-b58f-539a1bc431b6" name="Verify if response time &lt; 4 seconds">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="DataAndMetadataAssertion" id="d7c38687-4c9c-4eb4-86f9-7c1d83b6e68a" name="Verify if student details are updated">
+              <con:configuration xsi:type="con:DataAndMetadataAssertion">
+                <con:mode>Received Data</con:mode>
+                <con:elements>
+                  <con:path>$['status']</con:path>
+                  <con:element>status</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>true</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['data']['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>7786196</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['data']['first_name']</con:path>
+                  <con:element>first_name</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>KIRAN</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['data']['middle_name']</con:path>
+                  <con:element>middle_name</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Mr.</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['data']['last_name']</con:path>
+                  <con:element>last_name</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>G</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['data']['date_of_birth']</con:path>
+                  <con:element>date_of_birth</con:element>
+                  <con:operatorId>12</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>01-01-1999</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:originalMessage>{"status":"true","data":{"id":7786196,"first_name":"KIRAN","middle_name":"Mr.","last_name":"G","date_of_birth":"01-01-1999"}}</con:originalMessage>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="${#Global#extractedID}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="DELETE STUDENT" id="6d54e283-f266-44c7-a941-47df762e0dcb">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails/{id}" methodName="Id 3" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="DELETE STUDENT" id="066e9811-0652-4280-8fc1-c17ddf5338c7" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/7784919</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="61ba4e5a-0a3e-4765-b1e0-5501edd38c6d" name="Verify if response code=200">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="c230233e-5005-48f8-afb4-3ef05797d219" name="Verify if response time &lt; 4 seconds">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="DataAndMetadataAssertion" id="5bbfffb4-935a-4806-a393-b70d40ab9c2b" name="Verify if student record is deleted">
+              <con:configuration xsi:type="con:DataAndMetadataAssertion">
+                <con:mode>Received Data</con:mode>
+                <con:elements>
+                  <con:path>$['status']</con:path>
+                  <con:element>status</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>true</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['msg']</con:path>
+                  <con:element>msg</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>Delete  data success</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:originalMessage>{"status":"true","msg":"Delete  data success"}</con:originalMessage>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="${#Global#extractedID}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="VERIFY IF STUDENT IS DELETED" id="405f2a6d-de37-4158-9e5c-cb10a387144a">
+        <con:settings/>
+        <con:config service="https://thetestingworldapi.com" resourcePath="/api/studentsDetails/{id}" methodName="Id" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="VERIFY IF STUDENT IS DELETED" id="35e4f3e8-d45b-4123-bd40-60eafc2f139b" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;con:entry key="User-Agent" value="Mozilla/5.0 (X11; Linux i686; rv:109.0) Gecko/20100101 Firefox/117.0" xmlns:con="http://eviware.com/soapui/config"/></con:setting>
+            </con:settings>
+            <con:endpoint>https://thetestingworldapi.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://thetestingworldapi.com/api/studentsDetails/7784886</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="1de7653e-3152-491e-a083-f29d8bfa5af3" name="Verify if response code=200 OK">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="58cc2c63-090d-434f-b58f-539a1bc431b6" name="Verify if response time &lt; 4 seconds">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="DataAndMetadataAssertion" id="bc3dfe23-8c16-4503-94dd-138217d119df" name="Verify if student record is not found">
+              <con:configuration xsi:type="con:DataAndMetadataAssertion">
+                <con:mode>Received Data</con:mode>
+                <con:elements>
+                  <con:path>$['status']</con:path>
+                  <con:element>status</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>false</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$['msg']</con:path>
+                  <con:element>msg</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>No data Found</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:originalMessage>{"status":"false","msg":"No data Found"}</con:originalMessage>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="${#Global#extractedID}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:requirements/>
+  <con:properties>
+    <con:property>
+      <con:name>prjName</con:name>
+      <con:value>UserDetails</con:value>
+    </con:property>
+  </con:properties>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to ReadyAPI functional tests
+
+// If hardcoding the token, uncomment and change line 5
+// token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new java.io.FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new java.io.PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>

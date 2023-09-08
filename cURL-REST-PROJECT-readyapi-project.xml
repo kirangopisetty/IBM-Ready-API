@@ -1,0 +1,1557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="2ad0bbf7-f5cb-4594-9aed-b615a725b62a" created="3.47.0" activeEnvironment="Default environment" encryptionMode="Not encrypted" name="cURL REST PROJECT" projectVersion="" runType="SEQUENTIAL" resourceRoot="" updated="3.47.0 2023-06-30T11:24:47Z" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">false</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="GeneratableAllureReport@Folder">C:\Users\vmware29\Desktop\DAY2-PROJECT</con:setting>
+  </con:settings>
+  <con:interface xsi:type="con:RestService" id="7e14ce5b-cc81-410e-a08e-a550253133b4" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://gorest.co.in" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings id="9da74734-e113-49c3-ba56-e554e7103656"/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>https://gorest.co.in</con:endpoint>
+    </con:endpoints>
+    <con:resource name="Users" path="/public/v2/users" id="df76c800-365a-4f63-a520-69215be00c64">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Users" id="fa9e602e-4fb3-455a-9b70-7ec921af4f5a" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+          <con:status>522</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:request name="GETALLUSERDETAILS" id="c25b1608-b23a-4c70-9d39-267e4630c413" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://gorest.co.in</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+      <con:method name="Users 2" id="9aa4e0a9-0677-40b1-8b54-3ddbb76c5998" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>201</con:status>
+          <con:params/>
+          <con:element xmlns:user="https://gorest.co.in/public/v2/users">user:Response</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>422 401</con:status>
+          <con:params/>
+          <con:element>Fault</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+          <con:status>522</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>0</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:request name="CREATEUSER" id="86be0d83-709c-429c-a16b-886789ca09c9" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://gorest.co.in</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="Id" path="/public/v2/users/{id}" id="0c67fd03-b47b-4ed2-ac7b-18d6ba7866aa">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="Id" id="46e88442-c8a7-4e2b-b469-f6079e5b1582" method="PATCH">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>id</con:name>
+            <con:value>id</con:value>
+            <con:style>TEMPLATE</con:style>
+            <con:default>id</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:ns="https://gorest.co.in/public/v2/users/5108139">ns:Response</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element xmlns:ns="https://gorest.co.in/public/v2/users/5108139">ns:Fault</con:element>
+        </con:representation>
+        <con:request name="UPDATEUSER" id="d1fe0b3f-1762-47b4-8a05-416ae5e5e28a" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://gorest.co.in</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="id" value="id"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+      <con:method name="Id 2" id="8c77fe34-1c4a-4cc5-a137-081c9d2e50d3" method="DELETE">
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>id</con:name>
+            <con:value>id</con:value>
+            <con:style>TEMPLATE</con:style>
+            <con:default>id</con:default>
+            <con:path xsi:nil="true"/>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE">
+          <con:mediaType xsi:nil="true"/>
+          <con:status>204</con:status>
+          <con:params/>
+          <con:element>data</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json; charset=utf-8</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element xmlns:ns="https://gorest.co.in/public/v2/users/5108139">ns:Fault</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="692b7b28-8e54-4097-aa93-2fe0d367d928" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>https://gorest.co.in</con:endpoint>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:parameters>
+            <con:entry key="id" value="id"/>
+          </con:parameters>
+          <con:parameterOrder>
+            <con:entry>id</con:entry>
+          </con:parameterOrder>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="5cb1863f-f0bd-4137-a515-fb035ec0fe70" name="https://gorest.co.in Test Suite">
+    <con:settings id="64be63b3-76e2-42a0-bf47-53d022522232"/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="e2c710a3-6a9d-4c67-9cf9-b90ac9988398" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="https://gorest.co.in Test Case 1" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" zephyrTestName="" zephyrTestId="">
+      <con:settings/>
+      <con:testStep type="restrequest" name="TC1-GETUSERDETAILS" id="21b5013f-2115-4cf3-aaa0-87e139567331">
+        <con:settings/>
+        <con:config service="https://gorest.co.in" resourcePath="/public/v2/users" methodName="Users" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC1-GETUSERDETAILS" id="c25b1608-b23a-4c70-9d39-267e4630c413" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment>&lt;con:entry key="Authorization" value="${#Global#gAccessToken}" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Accept" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Content-Type" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>https://gorest.co.in</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://gorest.co.in/public/v2/users</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="b4031462-90dd-45a7-900e-08f663c00d58" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="a2b4d067-3c30-4f20-a88d-041e5b5f64d7" name="Response SLA">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="DataAndMetadataAssertion" id="3c67c811-e2f5-4b73-9ee3-0311abbcb00d" name="Verify if gender is male or female and status is active or inactive">
+              <con:configuration xsi:type="con:DataAndMetadataAssertion">
+                <con:mode>Received Data</con:mode>
+                <con:elements>
+                  <con:path>$[0]['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>5116903</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[0]['name']</con:path>
+                  <con:element>name</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>pdxss</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[0]['email']</con:path>
+                  <con:element>email</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>kiran.0907@hotmail.com</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[0]['gender']</con:path>
+                  <con:element>gender</con:element>
+                  <con:operatorId>3</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>male,female</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[0]['status']</con:path>
+                  <con:element>status</con:element>
+                  <con:operatorId>3</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>active,inactive</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[1]['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>5116886</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[1]['name']</con:path>
+                  <con:element>name</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>sduyr</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[1]['email']</con:path>
+                  <con:element>email</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>kiran.7929@hotmail.com</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[1]['gender']</con:path>
+                  <con:element>gender</con:element>
+                  <con:operatorId>3</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>male,female</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[1]['status']</con:path>
+                  <con:element>status</con:element>
+                  <con:operatorId>3</con:operatorId>
+                  <con:enabled>true</con:enabled>
+                  <con:expectedValue>active,inactive</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[2]['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>5116883</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[2]['name']</con:path>
+                  <con:element>name</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>tmwln</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[2]['email']</con:path>
+                  <con:element>email</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>kiran.9814@hotmail.com</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[2]['gender']</con:path>
+                  <con:element>gender</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>male</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[2]['status']</con:path>
+                  <con:element>status</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>active</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[3]['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>5116782</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[3]['name']</con:path>
+                  <con:element>name</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>Srikanth</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[3]['email']</con:path>
+                  <con:element>email</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>srikanth@hotmail.com</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[3]['gender']</con:path>
+                  <con:element>gender</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>male</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[3]['status']</con:path>
+                  <con:element>status</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>active</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[4]['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>5116843</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[4]['name']</con:path>
+                  <con:element>name</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>Kiran</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[4]['email']</con:path>
+                  <con:element>email</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>kiran13@hotmail.com</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[4]['gender']</con:path>
+                  <con:element>gender</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>male</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[4]['status']</con:path>
+                  <con:element>status</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>active</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[5]['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>5116834</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[5]['name']</con:path>
+                  <con:element>name</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>Kiran</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[5]['email']</con:path>
+                  <con:element>email</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>kiran123@hotmail.com</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[5]['gender']</con:path>
+                  <con:element>gender</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>male</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[5]['status']</con:path>
+                  <con:element>status</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>active</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[6]['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>5116814</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[6]['name']</con:path>
+                  <con:element>name</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>Kiran</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[6]['email']</con:path>
+                  <con:element>email</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>kiran12@hotmail.com</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[6]['gender']</con:path>
+                  <con:element>gender</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>male</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[6]['status']</con:path>
+                  <con:element>status</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>active</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[7]['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>5114472</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[7]['name']</con:path>
+                  <con:element>name</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>Tanya Tagore</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[7]['email']</con:path>
+                  <con:element>email</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>tanya_tagore@daniel.example</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[7]['gender']</con:path>
+                  <con:element>gender</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>male</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[7]['status']</con:path>
+                  <con:element>status</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>inactive</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[8]['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>5114471</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[8]['name']</con:path>
+                  <con:element>name</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>Bhanumati Joshi</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[8]['email']</con:path>
+                  <con:element>email</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>bhanumati_joshi@bartell.test</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[8]['gender']</con:path>
+                  <con:element>gender</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>male</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[8]['status']</con:path>
+                  <con:element>status</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>inactive</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[9]['id']</con:path>
+                  <con:element>id</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>5114470</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>true</con:numberType>
+                  <con:expectedDataType>2</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[9]['name']</con:path>
+                  <con:element>name</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>Bhagwati Gupta VM</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[9]['email']</con:path>
+                  <con:element>email</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>bhagwati_gupta_vm@schiller.test</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[9]['gender']</con:path>
+                  <con:element>gender</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>male</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:elements>
+                  <con:path>$[9]['status']</con:path>
+                  <con:element>status</con:element>
+                  <con:operatorId>1</con:operatorId>
+                  <con:enabled>false</con:enabled>
+                  <con:expectedValue>inactive</con:expectedValue>
+                  <con:caseSensitive>true</con:caseSensitive>
+                  <con:numberType>false</con:numberType>
+                  <con:expectedDataType>1</con:expectedDataType>
+                </con:elements>
+                <con:originalMessage>[{"id":5116903,"name":"pdxss","email":"kiran.0907@hotmail.com","gender":"male","status":"active"},{"id":5116886,"name":"sduyr","email":"kiran.7929@hotmail.com","gender":"male","status":"active"},{"id":5116883,"name":"tmwln","email":"kiran.9814@hotmail.com","gender":"male","status":"active"},{"id":5116782,"name":"Srikanth","email":"srikanth@hotmail.com","gender":"male","status":"active"},{"id":5116843,"name":"Kiran","email":"kiran13@hotmail.com","gender":"male","status":"active"},{"id":5116834,"name":"Kiran","email":"kiran123@hotmail.com","gender":"male","status":"active"},{"id":5116814,"name":"Kiran","email":"kiran12@hotmail.com","gender":"male","status":"active"},{"id":5114472,"name":"Tanya Tagore","email":"tanya_tagore@daniel.example","gender":"male","status":"inactive"},{"id":5114471,"name":"Bhanumati Joshi","email":"bhanumati_joshi@bartell.test","gender":"male","status":"inactive"},{"id":5114470,"name":"Bhagwati Gupta VM","email":"bhagwati_gupta_vm@schiller.test","gender":"male","status":"inactive"}]</con:originalMessage>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Match" id="01d0ec49-807e-4727-aa23-0832e16c8b2d" name="Verify if name=Kiran in index[4]">
+              <con:configuration>
+                <path>[4].name</path>
+                <content>"Kiran"</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Existence Match" id="778b170b-0272-455c-9e4e-41f4d75b6789" name="Verify if a particular index exists in the response body">
+              <con:configuration>
+                <path>[9].id</path>
+                <content>true</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Count" id="f06fbf8b-d210-4b8e-a3c9-11109f40c4a3" name="Verify the number of records retrieved from database">
+              <con:configuration>
+                <path>[*].id</path>
+                <content>10</content>
+                <allowWildcards>true</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="HTTP Header Exists" id="9ab21d80-d5ff-4905-8da4-4ada96125ac7" name="Verify if HTTP Header Content-Type exists">
+              <con:configuration>
+                <Header>Content-Type</Header>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="HTTP Header Exists" id="d0275086-3874-4b1a-b86e-a532b9a02986" name="Verify if HTTP Header Connection exists">
+              <con:configuration>
+                <Header>Connection</Header>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="HTTP Header Equals" id="fa604480-18db-4ba0-a9ea-d794245cef7f" name="Verify if HTTP Header content-type=application/json">
+              <con:configuration>
+                <Header>Content-Type</Header>
+                <Value>application/json; charset=utf-8</Value>
+                <ignoreCase>true</ignoreCase>
+                <useRegEx>false</useRegEx>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Sensitive Information Exposure" id="672348b0-3007-45f5-8394-4858d2302e3d" name="Sensitive Information Exposure">
+              <con:configuration>
+                <AssertionSpecificExposureList>~(?s).*Runtime (E|e)rror.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*SQLSTATE: [A-Z0-9].*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(s|S)tack:.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(s|S)yntax (e|E)rror\s.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*\w+/\d{1,2}(\.\d{1,3})+.*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*Invalid column name\s.*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*
+            (ORA|EXP|IMP|KUP|UDE|UDI|DBV|LCD|QSM|OCI|RMAN|LFI|PLS|PLQ|AMD|CLSR|PROC|PROT|TNS|NNC|NLP|NNF|NMP|NCR|NZE|O2F|O2I|O2U|PCB|PCC|SQL|AUD|IMG|VID|DRG|LPX|LSX)-\d{5}\s
+        .*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(p|P)owered by:? ([a-zA-Z]+)( [a-zA-Z]+){0,3}( |/)\d\.\d{1,2}\.\d{1,3}.*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*at [\w\$]+(\.[\w\$&lt;>\[\],]+|\.\.ctor)+(\((([\w\$&lt;>\`\[\]]+ [\w\$&lt;>]+, )*(([\w\$&lt;>\`\[\]]+
+            [\w\$&lt;>]+)))\)|\(\))
+        .*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*&lt;\w+:frame\s*class=".*"\s*line=".*"\s*method=".*"\s*/>.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*Traceback \(most recent call last\):.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*((I|i)ncorrect|(I|i)nvalid) (s|S)yntax.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(s|S)tack ?(t|T)race.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(e|E)rror was:\s.*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(v|V)ersion:? \d\.\d{1,2}\.{1,3}-?.*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*from [\w\$]+(\.[\w\$&lt;>]+)+:\d+:in `.+'.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*Error in process &lt;\d+\.\d+\.\d+> with exit value:.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*STACK\s?TRACE.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*Warning: [\w]+\(\) .+ in .+ on line \d{1,6}.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*((A|a)pache|vBulletin|MySQL|PostgreSQL|phpBB|Internet Information Services)( |/)\d{1,2}(\.\d{1,3})+
+        .*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*at [a-zA-Z][\w\$]*(\.[a-zA-Z][\w\$]*)+\((Unknown Source|Native
+            Method|[a-zA-Z][\w\$]*\.([a-zA-Z]{3,5}):\d+)\)
+        .*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*[^\s]+\.rb:\d+:in `.+'.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*File ".+", line [0-9]{1,6}, in.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <IncludeProjectSpecific>true</IncludeProjectSpecific>
+                <IncludeGlobal>false</IncludeGlobal>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC2-CREATEUSER 2" id="dfec9370-19b6-4412-98cf-0c6d7dd3d556">
+        <con:settings/>
+        <con:config service="https://gorest.co.in" resourcePath="/public/v2/users" methodName="Users 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC2-CREATEUSER 2" id="86be0d83-709c-429c-a16b-886789ca09c9" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment>&lt;con:entry key="Authorization" value="Bearer ba27e6bcbebdb6672d44749409fa9d17d58e44177848fa7079a86ee037657094" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Accept" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Content-Type" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>https://gorest.co.in</con:endpoint>
+            <con:request>{
+"name":"Kiran", 
+"gender":"others", 
+"email":"kirantraaaainsdf@gmail.com", 
+"status":"active"
+}</con:request>
+            <con:originalUri>https://gorest.co.in/public/v2/users</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="48706766-99e5-4bbe-a215-e426b3a0f862" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>201</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="911596cd-b970-4789-bad1-47bb1b449a05" name="Response SLA">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Sensitive Information Exposure" id="ea2e395b-a7c9-4ba4-a976-c631117eefd8" name="Sensitive Information Exposure">
+              <con:configuration>
+                <AssertionSpecificExposureList>~(?s).*Runtime (E|e)rror.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*SQLSTATE: [A-Z0-9].*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(s|S)tack:.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(s|S)yntax (e|E)rror\s.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*\w+/\d{1,2}(\.\d{1,3})+.*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*Invalid column name\s.*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*
+            (ORA|EXP|IMP|KUP|UDE|UDI|DBV|LCD|QSM|OCI|RMAN|LFI|PLS|PLQ|AMD|CLSR|PROC|PROT|TNS|NNC|NLP|NNF|NMP|NCR|NZE|O2F|O2I|O2U|PCB|PCC|SQL|AUD|IMG|VID|DRG|LPX|LSX)-\d{5}\s
+        .*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(p|P)owered by:? ([a-zA-Z]+)( [a-zA-Z]+){0,3}( |/)\d\.\d{1,2}\.\d{1,3}.*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*at [\w\$]+(\.[\w\$&lt;>\[\],]+|\.\.ctor)+(\((([\w\$&lt;>\`\[\]]+ [\w\$&lt;>]+, )*(([\w\$&lt;>\`\[\]]+
+            [\w\$&lt;>]+)))\)|\(\))
+        .*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*&lt;\w+:frame\s*class=".*"\s*line=".*"\s*method=".*"\s*/>.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*Traceback \(most recent call last\):.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*((I|i)ncorrect|(I|i)nvalid) (s|S)yntax.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(s|S)tack ?(t|T)race.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(e|E)rror was:\s.*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*(v|V)ersion:? \d\.\d{1,2}\.{1,3}-?.*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*from [\w\$]+(\.[\w\$&lt;>]+)+:\d+:in `.+'.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*Error in process &lt;\d+\.\d+\.\d+> with exit value:.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*STACK\s?TRACE.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*Warning: [\w]+\(\) .+ in .+ on line \d{1,6}.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*((A|a)pache|vBulletin|MySQL|PostgreSQL|phpBB|Internet Information Services)( |/)\d{1,2}(\.\d{1,3})+
+        .*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*at [a-zA-Z][\w\$]*(\.[a-zA-Z][\w\$]*)+\((Unknown Source|Native
+            Method|[a-zA-Z][\w\$]*\.([a-zA-Z]{3,5}):\d+)\)
+        .*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*[^\s]+\.rb:\d+:in `.+'.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <AssertionSpecificExposureList>~(?s).*File ".+", line [0-9]{1,6}, in.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+                <IncludeProjectSpecific>true</IncludeProjectSpecific>
+                <IncludeGlobal>false</IncludeGlobal>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="delay" name="Delay" id="62e291c7-39ea-427f-89a8-ee3854619897">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC3-UPDATEUSER 2" id="1b44de27-e6e1-48a8-ae52-47ff3c99a825">
+        <con:settings/>
+        <con:config service="https://gorest.co.in" resourcePath="/public/v2/users/{id}" methodName="Id" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC3-UPDATEUSER 2" id="d1fe0b3f-1762-47b4-8a05-416ae5e5e28a" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment>&lt;con:entry key="Authorization" value="Bearer ba27e6bcbebdb6672d44749409fa9d17d58e44177848fa7079a86ee037657094" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Accept" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Content-Type" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>https://gorest.co.in</con:endpoint>
+            <con:request>{
+"name":"KIRAN", 
+"email":"kirang@gmail.com", 
+"status":"active"
+}</con:request>
+            <con:originalUri>https://gorest.co.in/public/v2/users/5108139</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="c9850be4-5532-4821-8a07-8524a624b808" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="f384611e-f31f-4b38-8c91-08544e6a4ebe" name="Response SLA">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="5104365"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC4-DELETEUSER 2" id="fd6d17a8-ccb6-429e-9d6c-54618b280615">
+        <con:settings/>
+        <con:config service="https://gorest.co.in" resourcePath="/public/v2/users/{id}" methodName="Id 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC4-DELETEUSER 2" id="692b7b28-8e54-4097-aa93-2fe0d367d928" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment>&lt;con:entry key="Authorization" value="Bearer ba27e6bcbebdb6672d44749409fa9d17d58e44177848fa7079a86ee037657094" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Accept" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Content-Type" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>https://gorest.co.in</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://gorest.co.in/public/v2/users/5108139</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="5671cfdc-dd10-4594-a827-95e3aa284327" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>204</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="d94db713-fd1a-45ef-9dcd-8aad9bd94116" name="Response SLA">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="5122660"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="dc205eda-4ebc-4129-afd0-361a9e35c87b" name="https://gorest.co.in Test Suite 2">
+    <con:settings id="3a9c5eb5-92a7-46fe-8f94-8a3c97e7d182">
+      <con:setting id="GeneratableJUnitReport@Style">Single Page (Print)</con:setting>
+      <con:setting id="GeneratableJUnitReport@Folder">C:\Users\vmware29\Desktop\DAY2-PROJECT</con:setting>
+      <con:setting id="GeneratableAllureReport@Folder">C:\Users\vmware29\Desktop\DAY2-PROJECT</con:setting>
+    </con:settings>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="b15cbc63-a3c0-4d8e-97a7-c4d5eb1f3ccb" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="https://gorest.co.in Test Case 1" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" zephyrTestName="" zephyrTestId="">
+      <con:settings/>
+      <con:testStep type="delay" name="Delay" id="6326ac9c-312d-48c4-bf0a-bc74d583c329">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC2-CREATEUSER" id="eb0c4185-13bf-4c4e-9e6a-164826b56a5e">
+        <con:settings/>
+        <con:config service="https://gorest.co.in" resourcePath="/public/v2/users" methodName="Users 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC2-CREATEUSER" id="86be0d83-709c-429c-a16b-886789ca09c9" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment>&lt;con:entry key="Authorization" value="Bearer ba27e6bcbebdb6672d44749409fa9d17d58e44177848fa7079a86ee037657094" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Accept" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Content-Type" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>https://gorest.co.in</con:endpoint>
+            <con:request>{
+"name":"Kiran", 
+"gender":"male", 
+"email":"asdssasf@gmail.com", 
+"status":"active"
+}</con:request>
+            <con:originalUri>https://gorest.co.in/public/v2/users</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="48706766-99e5-4bbe-a215-e426b3a0f862" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>201</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="911596cd-b970-4789-bad1-47bb1b449a05" name="Response SLA">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="60e55e1b-2339-44bc-88b2-b36de61de8c9" name="https://gorest.co.in Test Suite 3">
+    <con:settings id="a201f6d1-e492-439e-8f86-cb3b7e0f41b4"/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="3e45184c-a726-4aac-8603-3f7320abc772" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="https://gorest.co.in Test Case 1" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" zephyrTestName="" zephyrTestId="">
+      <con:settings/>
+      <con:testStep type="delay" name="Delay" id="fcb66830-8d84-4429-83fe-a346604b54cf">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC3-UPDATEUSER" id="d54b81aa-af0b-4be3-8897-080f1a77b8ad">
+        <con:settings/>
+        <con:config service="https://gorest.co.in" resourcePath="/public/v2/users/{id}" methodName="Id" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC3-UPDATEUSER" id="d1fe0b3f-1762-47b4-8a05-416ae5e5e28a" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment>&lt;con:entry key="Authorization" value="Bearer ba27e6bcbebdb6672d44749409fa9d17d58e44177848fa7079a86ee037657094" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Accept" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Content-Type" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>https://gorest.co.in</con:endpoint>
+            <con:request>{
+"name":"KIRAN", 
+"email":"kirang@gmail.com", 
+"status":"active"
+}</con:request>
+            <con:originalUri>https://gorest.co.in/public/v2/users/5108139</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="c9850be4-5532-4821-8a07-8524a624b808" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="f384611e-f31f-4b38-8c91-08544e6a4ebe" name="Response SLA">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="5104365"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="8e83465f-cd55-48cf-8236-83138b2ebcb3" name="https://gorest.co.in Test Suite 4">
+    <con:settings id="1986c926-eda6-4ab4-8daa-5a603d7173e3"/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="1999311f-a38a-4b58-a291-f2e43b6f5173" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="https://gorest.co.in Test Case 1" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" zephyrTestName="" zephyrTestId="">
+      <con:settings/>
+      <con:testStep type="delay" name="Delay" id="dfa057e2-e488-4dc2-87f9-940ff8e5f051">
+        <con:settings/>
+        <con:config>
+          <delay>1000</delay>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="TC4-DELETEUSER" id="e8254638-d4b4-474a-b5ad-eebb370aad23">
+        <con:settings/>
+        <con:config service="https://gorest.co.in" resourcePath="/public/v2/users/{id}" methodName="Id 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="TC4-DELETEUSER" id="692b7b28-8e54-4097-aa93-2fe0d367d928" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment>&lt;con:entry key="Authorization" value="Bearer ba27e6bcbebdb6672d44749409fa9d17d58e44177848fa7079a86ee037657094" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Accept" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Content-Type" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>https://gorest.co.in</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://gorest.co.in/public/v2/users/5108139</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="5671cfdc-dd10-4594-a827-95e3aa284327" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>204</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="d94db713-fd1a-45ef-9dcd-8aad9bd94116" name="Response SLA">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="5104371"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="a2fb0390-8558-4e6d-8014-511d55420e72" name="DDT-TEST-SUITE">
+    <con:settings id="31dd25db-dc96-4f34-b294-da5eabdf2de8"/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="84fd2cab-2fd3-447a-a666-1a9646da8d1b" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="DDT-TEXT-TEST-CASE" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="datasource" name="Data Source" id="19f82811-3eee-4584-8149-11977535cec7">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="File">
+            <con:configuration>
+              <fileName>C:/Users/vmware29/Desktop/DAY4-PROJECT/createStudTestData.txt</fileName>
+              <separator>,</separator>
+              <trim>true</trim>
+              <charset>Cp1252</charset>
+              <quotedValues>false</quotedValues>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>varName</con:property>
+          <con:property>varGender</con:property>
+          <con:property>varEmail</con:property>
+          <con:property>varStatus</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+          <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="CREATE USER" id="071be09e-af9d-4544-a9ea-4ec02ecefb93">
+        <con:settings/>
+        <con:config service="https://gorest.co.in" resourcePath="/public/v2/users" methodName="Users 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="CREATE USER" id="86be0d83-709c-429c-a16b-886789ca09c9" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment>&lt;con:entry key="Authorization" value="Bearer ba27e6bcbebdb6672d44749409fa9d17d58e44177848fa7079a86ee037657094" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Accept" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Content-Type" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>https://gorest.co.in</con:endpoint>
+            <con:request>{
+"name":"${Data Source#varName}", 
+"gender":"${Data Source#varGender}", 
+"email":"${Data Source#varEmail}", 
+"status":"${Data Source#varStatus}"
+}</con:request>
+            <con:originalUri>https://gorest.co.in/public/v2/users</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="48706766-99e5-4bbe-a215-e426b3a0f862" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>201</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="911596cd-b970-4789-bad1-47bb1b449a05" name="Response SLA">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="Data Source Loop" id="ca701afb-f452-459d-b305-453b14cdd02f">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>Data Source</dataSourceStep>
+          <targetStep>CREATE USER</targetStep>
+          <discardResults>false</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="b6bbc622-11c1-44d0-80bd-ce52a98043ed" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="DDT-XLS-TEST-CASE" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="datasource" name="Data Source" id="67f9d7db-2e6c-4078-941b-cf25fc25e4ee">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Excel">
+            <con:configuration>
+              <file>C:/Users/vmware29/Desktop/DAY4-PROJECT/updateUserTestData.xlsx</file>
+              <worksheet>Sheet1</worksheet>
+              <cell>A2</cell>
+              <ignoreEmpty>false</ignoreEmpty>
+              <evaluateFormulas>false</evaluateFormulas>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>varID</con:property>
+          <con:property>varName</con:property>
+          <con:property>varEmail</con:property>
+          <con:property>varStatus</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+          <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="UPDATE USER" id="53dd8fa1-1e68-40d6-b50d-11cc9e5cfda1">
+        <con:settings/>
+        <con:config service="https://gorest.co.in" resourcePath="/public/v2/users/{id}" methodName="Id" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="UPDATE USER" id="d1fe0b3f-1762-47b4-8a05-416ae5e5e28a" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment>&lt;con:entry key="Authorization" value="Bearer ba27e6bcbebdb6672d44749409fa9d17d58e44177848fa7079a86ee037657094" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Accept" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Content-Type" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>https://gorest.co.in</con:endpoint>
+            <con:request>{
+"name":"${Data Source#varName}", 
+"email":"${Data Source#varEmail}", 
+"status":"${Data Source#varStatus}"
+}</con:request>
+            <con:originalUri>https://gorest.co.in/public/v2/users/5108139</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="c9850be4-5532-4821-8a07-8524a624b808" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="f384611e-f31f-4b38-8c91-08544e6a4ebe" name="Response SLA">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="${Data Source#varID}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="Data Source Loop" id="3d500a5f-ab56-4f40-83b0-d0952adf782f">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>Data Source</dataSourceStep>
+          <targetStep>UPDATE USER</targetStep>
+          <discardResults>false</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="4c1221cd-27d9-4343-a042-90c57fcbfc36" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="DDT-DATA-GRID-TEST-CASE" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="datasource" name="Data Source" id="4ab0020b-cf05-4de3-8186-b62513aa2acf">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Grid">
+            <con:configuration>
+              <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">5130416&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">5130417&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">5130418&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <row>&lt;xml-fragment>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">5130419&lt;/con:entry>&lt;con:entry xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></row>
+              <recognizeAsPlainText>true</recognizeAsPlainText>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>id</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+          <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="DELETE USER" id="f6912925-b989-4dbb-9fab-8129008ad3b1">
+        <con:settings/>
+        <con:config service="https://gorest.co.in" resourcePath="/public/v2/users/{id}" methodName="Id 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="DELETE USER" id="692b7b28-8e54-4097-aa93-2fe0d367d928" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment>&lt;con:entry key="Authorization" value="Bearer ba27e6bcbebdb6672d44749409fa9d17d58e44177848fa7079a86ee037657094" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Accept" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Content-Type" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>https://gorest.co.in</con:endpoint>
+            <con:request/>
+            <con:originalUri>https://gorest.co.in/public/v2/users/5108139</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="5671cfdc-dd10-4594-a827-95e3aa284327" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>204</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="d94db713-fd1a-45ef-9dcd-8aad9bd94116" name="Response SLA">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="${Data Source#id}"/>
+            </con:parameters>
+            <con:parameterOrder>
+              <con:entry>id</con:entry>
+            </con:parameterOrder>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="Data Source Loop" id="c6be8c5d-4496-4a72-adaa-ad51af81ca55">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>Data Source</dataSourceStep>
+          <targetStep>DELETE USER</targetStep>
+          <discardResults>false</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="f1c5ec4c-5e52-4bf3-8782-86ae8de3cdad" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="DDT-DATA-GENERATOR-TC" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="datasource" name="Data Source" id="10fcb6f0-db9d-457a-a79e-81cf51dbe276">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Data Generator">
+            <con:configuration>
+              <generatedDataCount>10</generatedDataCount>
+              <generatorsTotalNumber>4</generatorsTotalNumber>
+              <lastSelectedProperty>3</lastSelectedProperty>
+              <GeneratorType0>NAME</GeneratorType0>
+              <PropertyName0>name</PropertyName0>
+              <repetitionCountname>0</repetitionCountname>
+              <repeatValuesname>false</repeatValuesname>
+              <NameTypeName0>FirstName</NameTypeName0>
+              <NameGenderName0>Any</NameGenderName0>
+              <GeneratorType1>SET</GeneratorType1>
+              <PropertyName1>gender</PropertyName1>
+              <repetitionCountgender>0</repetitionCountgender>
+              <repeatValuesgender>false</repeatValuesgender>
+              <ValueFromSetIsSequenceValuegender>false</ValueFromSetIsSequenceValuegender>
+              <ValueFromSetStringsgender>Male</ValueFromSetStringsgender>
+              <ValueFromSetStringsgender>Female</ValueFromSetStringsgender>
+              <GeneratorType2>EMAIL</GeneratorType2>
+              <PropertyName2>email</PropertyName2>
+              <repetitionCountemail>0</repetitionCountemail>
+              <repeatValuesemail>false</repeatValuesemail>
+              <GeneratorType3>SET</GeneratorType3>
+              <PropertyName3>status</PropertyName3>
+              <repetitionCountstatus>0</repetitionCountstatus>
+              <repeatValuesstatus>false</repeatValuesstatus>
+              <ValueFromSetIsSequenceValuestatus>false</ValueFromSetIsSequenceValuestatus>
+              <ValueFromSetStringsstatus>Active</ValueFromSetStringsstatus>
+              <ValueFromSetStringsstatus>Inactive</ValueFromSetStringsstatus>
+              <escapeSpaceSequence/>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>name</con:property>
+          <con:property>gender</con:property>
+          <con:property>email</con:property>
+          <con:property>status</con:property>
+          <con:restartOnRun>true</con:restartOnRun>
+          <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="CREATE USER" id="1ed0e601-c1b5-41bd-8633-bd6e12ced79c">
+        <con:settings/>
+        <con:config service="https://gorest.co.in" resourcePath="/public/v2/users" methodName="Users 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="CREATE USER" id="86be0d83-709c-429c-a16b-886789ca09c9" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment>&lt;con:entry key="Authorization" value="Bearer ba27e6bcbebdb6672d44749409fa9d17d58e44177848fa7079a86ee037657094" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Accept" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;con:entry key="Content-Type" value="application/json" xmlns:con="http://eviware.com/soapui/config"/>&lt;/xml-fragment></con:setting>
+            </con:settings>
+            <con:endpoint>https://gorest.co.in</con:endpoint>
+            <con:request>{
+"name":"${Data Source#name}", 
+"gender":"${Data Source#gender}", 
+"email":"${Data Source#email}", 
+"status":"${Data Source#status}"
+}</con:request>
+            <con:originalUri>https://gorest.co.in/public/v2/users</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="48706766-99e5-4bbe-a215-e426b3a0f862" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>201</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="911596cd-b970-4789-bad1-47bb1b449a05" name="Response SLA">
+              <con:configuration>
+                <SLA>4000</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="transfer" name="PropertyTransfer 1" id="16bc6797-cd8c-49bf-8c8f-15cbc60f8922">
+        <con:settings/>
+        <con:config xsi:type="con:PropertyTransfersStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true">
+            <con:name>id</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>CREATE USER</con:sourceStep>
+            <con:sourcePath>$['id']</con:sourcePath>
+            <con:targetType>id</con:targetType>
+            <con:targetStep>Data Sink</con:targetStep>
+            <con:targetPath/>
+            <con:type>JSONPATH</con:type>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+          <con:transfers setNullOnMissingSource="true" transferTextContent="true" failOnError="true">
+            <con:name>name</con:name>
+            <con:sourceType>Response</con:sourceType>
+            <con:sourceStep>CREATE USER</con:sourceStep>
+            <con:sourcePath>$['name']</con:sourcePath>
+            <con:targetType>name</con:targetType>
+            <con:targetStep>Data Sink</con:targetStep>
+            <con:targetPath/>
+            <con:type>JSONPATH</con:type>
+            <con:upgraded>true</con:upgraded>
+          </con:transfers>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasink" name="Data Sink" id="6f988d0d-114a-4d1a-9a34-5b49ec13ec14">
+        <con:settings/>
+        <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSink type="File">
+            <con:configuration>
+              <fileName>C:/Users/vmware29/Desktop/DAY4-PROJECT/createStudentResults.txt</fileName>
+              <separator>,</separator>
+              <escape>"</escape>
+              <quote>true</quote>
+              <trim>true</trim>
+              <append>false</append>
+              <encoding>Cp1252</encoding>
+            </con:configuration>
+          </con:dataSink>
+          <con:properties>
+            <con:property>
+              <con:name>id</con:name>
+              <con:value>5130782</con:value>
+            </con:property>
+            <con:property>
+              <con:name>name</con:name>
+              <con:value>Pascale</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="Data Source Loop" id="cc137ff1-cf2b-4c79-a46a-4c121271d6c8">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>Data Source</dataSourceStep>
+          <targetStep>CREATE USER</targetStep>
+          <discardResults>false</discardResults>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:requirements/>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:xmlTemplates/>
+    <con:parameters/>
+  </con:reporting>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to ReadyAPI functional tests
+
+// If hardcoding the token, uncomment and change line 5
+// token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new java.io.FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new java.io.PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>
